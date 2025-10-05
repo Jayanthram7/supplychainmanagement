@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3001/api/replenishment';
+const API_BASE_URL = 'https://supplychainmanagement-hy5c.onrender.com/api/replenishment';
 
 export const createLowStockAlert = async (data: {
   store_id: string;
