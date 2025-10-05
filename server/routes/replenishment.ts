@@ -6,7 +6,7 @@ import {
   receiveStock,
   getAllOrders,
   getOrderById
-} from '../services/replenishmentService';
+} from '../services/replenishmentService.js';
 
 const router = express.Router();
 

@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import connectDB from './config/database';
-import replenishmentRoutes from './routes/replenishment';
+import connectDB from './config/database.js';
+import replenishmentRoutes from './routes/replenishment.js';
 
 dotenv.config();
 

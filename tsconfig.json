@@ -1,7 +1,22 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "compilerOptions": {
+    "target": "ES2020",                   // modern JS for Node and browser
+    "module": "NodeNext",                  // must match NodeNext resolution
+    "moduleResolution": "NodeNext",       // Node + ESM resolution
+    "esModuleInterop": true,              // allows import x from 'y'
+    "allowSyntheticDefaultImports": true, // allows default imports for CommonJS modules
+    "strict": true,                       // enable strict type checking
+    "skipLibCheck": true,                 // skip type checking of node_modules
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",                   // support React JSX
+    "outDir": "dist"                      // optional output directory for compilation
+  },
+  "include": [
+    "src",        // frontend source
+    "server"      // backend source
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

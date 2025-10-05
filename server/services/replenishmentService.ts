@@ -1,6 +1,6 @@
-import ReplenishmentOrder, { OrderStatus } from '../models/ReplenishmentOrder';
-import { sendKafkaMessage } from '../kafka/kafkaClient';
-import { KAFKA_TOPICS } from '../kafka/topics';
+import ReplenishmentOrder, { OrderStatus } from '../models/ReplenishmentOrder.js';
+import { sendKafkaMessage } from '../kafka/kafkaClient.js';
+import { KAFKA_TOPICS } from '../kafka/topics.js';
 
 export const createLowStockAlert = async (data: {
   store_id: string;
